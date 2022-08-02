@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "allowJs": true,
+    "checkJs": true,
+    "strict": false,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "declarationDir": "./dist",
+    "declaration": true,
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@core/*": [ "./src/core/*" ],
+      "@modules/*": [ "./src/modules/*" ],
+    },
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/types/index.d.ts"
+    ]
+  },
+  "files": [
+    "ormconfig.ts",
+    "migration-runner.ts"
+  ],
+  "include": [
+    "src",
+    "commands",
+    "test",
+    "migrations",
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}
